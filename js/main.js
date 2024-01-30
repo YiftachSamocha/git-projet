@@ -8,7 +8,7 @@ function onBallClick() {
         return
     }
     var value = parseInt(ball.style.height) || 100;
-    value += 50;
+    value += getRandomInt(20, 60)
 
     ball.style.width = value + 'px'
     ball.style.height = value + 'px'
