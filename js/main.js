@@ -1,6 +1,11 @@
-function onBallClick(){
-    var ball= document.querySelector('.ball')
-    ball.style.width= '150px'
-    ball.style.height= '150px'
-    ball.innerHTML= '150'
+function onBallClick() {
+    var ball = document.querySelector('.ball');
+    var value = parseInt(ball.style.height) || 100;
+    value += 50;
+
+    ball.style.width = value + 'px';
+    ball.style.height = value + 'px';
+    ball.style.borderRadius = value + 'px';
+    ball.innerHTML = value
+
 }
