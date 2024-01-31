@@ -1,6 +1,6 @@
 function onBallClick() {
     var ball = document.querySelector('.ball');
-    if (ball.innerHTML === '400') {
+    if (ball.innerHTML >400) {
         ball.style.width = '100px'
         ball.style.height = '100px'
         ball.style.borderRadius = '100px'
