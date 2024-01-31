@@ -1,5 +1,6 @@
 function onBallClick() {
     var ball = document.querySelector('.ball');
+    ball.style.backgroundColor= getRandomColor()
     if (ball.innerHTML >400) {
         ball.style.width = '100px'
         ball.style.height = '100px'
